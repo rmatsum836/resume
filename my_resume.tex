@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://raymatsumoto.com/}{\Large Ray Matsumoto}} & Email :
+    \href{mailto:ray.a.matsumoto@vanderbilt.edu}{ray.a.matsumoto@vanderbilt.edu} \\
+    & Website:
+  \href{http://raymatsumoto.com/}{http://www.raymatsumoto.com} \\
+    & Mobile: +1-843-475-8628\\
+    & GitHub: \href{https://github.com/rmatsum836}{github.com/rmatsum836} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vanderbilt University}{Nashville, TN}
+      {Doctorate of Philosophy in Chemical and Biomolecular Engineering}{Aug.
+      2016 -- May 2021 (Expected)}
+    \resumeSubheading
+      {Clemson University}{Clemson, SC}
+      {Bachelor of Science in Materials Science and Engineering}{Aug. 2011 -- Dec. 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FIRST (Fluid, Interface, Reactions, Structure, and Transport)
+      Center}{Nashville, TN}
+      {Vanderbilt University}{Jan. 2017 - Present}
+      \resumeItemListStart
+        \item{Modeled the structure and dynamical behavior of ions in bulk, at
+        interfaces, and in nanometer-scale confinement}
+        \item{Implemented computational screening over 400+ novel electrolytes to
+        understand connections between chemical properties and electrochemical
+        performance}
+        \item{Implemented a cluster algorithm in python to analyze the structure of
+        electrolytes}
+        \item{Worked in diverse teams of experimental and computational
+            scientists to answer scientific questions}
+      \resumeItemListEnd
+    \resumeSubheading
+      {MoSDeF (Molecular Simulation and Design Framework)}{Nashville,
+      TN}
+      {Vanderbilt University}{Jan. 2017 - Present}
+      \resumeItemListStart
+        \item{Developed software for the construction and parametrization of molecular
+      models}
+        \item{Performed code review, expanded functionality of
+            writers for simulation engines, and wrote additional unit
+            testing}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Engineering Sales Intern}{Fort Mill, SC}
+      {Fitesa}{Summer 2015}
+      \resumeItemListStart
+        \item{Conducted end product polymer materials analysis to identify sales
+            opportunities}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TEACHING-----------------
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Lab Mentor}{Nashville, TN}{Vanderbilt University}
+      {May 2019 - Present}
+      \resumeItemListStart
+        \item{Onboarded undergraduate students for a 10-week internship in
+            molecular simulation}
+        \item{Taught undergraduate students skills in python, unix, and git}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant}{Nashville, TN}{Vanderbilt University}
+      {Aug. 2016 - May 2017}
+      \resumeItemListStart
+        \item{Chemical Process Principles}
+        \item{Modeling and Simulation in Chemical Engineering}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tutor (Middle School and High School)}{Charleston, SC}{ClubZ! Tutoring
+      Services}
+      {Jan. 2016 - May 2016}
+      \resumeItemListStart
+        \item{Tutored multiple students in algebra, chemistry, and AP calculus}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Phase Separation}
+      {Open source python library for detecting phase separation in liquid
+      solutions through image analysis and image processing}
+    \resumeSubItem{Pore-Builder}
+      {Python package that interfaces with MoSDeF to construct and parametrize
+      graphene slit pores}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
